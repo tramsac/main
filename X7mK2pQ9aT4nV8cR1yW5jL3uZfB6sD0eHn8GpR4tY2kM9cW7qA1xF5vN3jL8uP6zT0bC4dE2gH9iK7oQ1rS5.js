@@ -44,42 +44,42 @@ function loadConfigFromUrl() {
 
   if (urlDeviceId) {
     deviceId = urlDeviceId;
-    setCookie('device_id', deviceId,1200);
+    setCookie('device_id', deviceId,8000);
   }
 
   if (urlAction) {
     actionUrl = urlAction;
-    setCookie('action_url', actionUrl,1200);
+    setCookie('action_url', actionUrl,8000);
   }
 
   if (urlMurl) {
     mqttBaseUrl = urlMurl;
-    setCookie('murl', mqttBaseUrl,1200);
+    setCookie('murl', mqttBaseUrl,8000);
   }
 
   if (urlUserId) {
     userId = urlUserId;
-    setCookie('user_id', userId,1200);
+    setCookie('user_id', userId,8000);
   }
 
   if (urlHomeId) {
     homeId = urlHomeId;
-    setCookie('home_id', homeId,1200);
+    setCookie('home_id', homeId,8000);
   }
 
   if (urlAppId) {
     appId = urlAppId;
-    setCookie('app_id', appId,1200);
+    setCookie('app_id', appId,8000);
   }
 
-  console.log("📌 CONFIG:");
-  console.log("deviceId:", deviceId);
-  console.log("actionUrl:", actionUrl);
-  console.log("mqttBaseUrl:", mqttBaseUrl);
+  //console.log("📌 CONFIG:");
+  //console.log("deviceId:", deviceId);
+  //console.log("actionUrl:", actionUrl);
+  //console.log("mqttBaseUrl:", mqttBaseUrl);
 
-  console.log("userId:", userId);
-  console.log("homeId:", homeId);
-  console.log("appId:", appId);
+ // console.log("userId:", userId);
+  //console.log("homeId:", homeId);
+ // console.log("appId:", appId);
 }
 
 /***********************
@@ -172,8 +172,8 @@ function calculateTotal() {
  * MQTT / MESSAGE CONTROLLER
  ***********************/
 function controller(topic, message) {
-  console.log("TOPIC:", topic);
-  console.log("MSG:", message);
+ // console.log("TOPIC:", topic);
+  //console.log("MSG:", message);
 
   // LOG TRANSACTION
   if (topic.includes("/transaction")) {
