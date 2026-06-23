@@ -64,7 +64,7 @@ client.on('connect', () => {
             }
         });
     }
-    console.log("success");
+  //  console.log("success");
     client.publish('' + appId + '/cmnd/ws/' + homeId + '/' + userId + '/' + deviceId + '/state', "{}", { qos: 1, retain: false }, (err) => {
         if (err) {
 
@@ -81,12 +81,12 @@ client.on('message', (topic, message) => {
 
 // Xử lý sự kiện khi kết nối bị mất
 client.on('offline', () => {
-    console.log('MQTT client bị mất kết nối!');
+  //  console.log('MQTT client bị mất kết nối!');
 });
 
 // Xử lý sự kiện khi gặp lỗi
 client.on('error', (error) => {
-    console.log('Lỗi kết nối MQTT:', error);
+  //  console.log('Lỗi kết nối MQTT:', error);
 });
 
 
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (confirm("Bạn có chắc muốn BẬT thiết bị không?")) {
-            console.log("Bật thiết bị");
+           // console.log("Bật thiết bị");
 
             client.publish(
                 `${appId}/cmnd/ws/${homeId}/${userId}/${deviceId}/power`,
@@ -116,9 +116,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 { qos: 1, retain: false },
                 (err) => {
                     if (err) {
-                        console.error("Publish lỗi:", err);
+                       // console.error("Publish lỗi:", err);
                     } else {
-                        console.log("Đã gửi ON");
+                       // console.log("Đã gửi ON");
                     }
                 }
             );
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (confirm("Bạn có chắc muốn TẮT thiết bị không?")) {
-            console.log("Tắt thiết bị");
+            //console.log("Tắt thiết bị");
 
             client.publish(
                `${appId}/cmnd/ws/${homeId}/${userId}/${deviceId}/power`,
@@ -149,9 +149,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 { qos: 1, retain: false },
                 (err) => {
                     if (err) {
-                        console.error("Publish lỗi:", err);
+                      //  console.error("Publish lỗi:", err);
                     } else {
-                        console.log("Đã gửi OFF");
+                       // console.log("Đã gửi OFF");
                     }
                 }
             );
