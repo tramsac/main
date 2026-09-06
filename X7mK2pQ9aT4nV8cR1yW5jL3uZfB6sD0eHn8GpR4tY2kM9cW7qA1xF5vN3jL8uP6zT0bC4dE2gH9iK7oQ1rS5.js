@@ -85,31 +85,37 @@ function loadConfigFromUrl() {
       if (config.device_id) {
         deviceId = config.device_id;
         setCookie('device_id', deviceId, 8000);
+        console.log(deviceId);
       }
 
       if (config.action_url) {
         actionUrl = config.action_url;
         setCookie('action_url', actionUrl, 8000);
+         console.log(actionUrl);
       }
 
       if (config.murl) {
         mqttBaseUrl = config.murl;
         setCookie('murl', mqttBaseUrl, 8000);
+        console.log(mqttBaseUrl);
       }
 
       if (config.user_id) {
         userId = config.user_id;
         setCookie('user_id', userId, 8000);
+        console.log(userId);
       }
 
       if (config.home_id) {
         homeId = config.home_id;
         setCookie('home_id', homeId, 8000);
+          console.log(homeId);
       }
 
       if (config.app_id) {
         appId = config.app_id;
         setCookie('app_id', appId, 8000);
+         console.log(appId);
       }
 
       /*
@@ -126,7 +132,7 @@ function loadConfigFromUrl() {
 
     console.error("Invalid LS parameter");
   }
-  
+
   if (urlDeviceId) {
     deviceId = urlDeviceId;
     setCookie('device_id', deviceId,8000);
