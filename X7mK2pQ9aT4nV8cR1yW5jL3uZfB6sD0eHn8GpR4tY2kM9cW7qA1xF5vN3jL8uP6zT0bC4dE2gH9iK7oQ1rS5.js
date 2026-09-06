@@ -27,6 +27,39 @@ function loadConfigFromCookie() {
 }
 
 /***********************
+ * LS BASE64 DECODE
+ ***********************/
+function decodeLS(ls) {
+  try {
+    // Base64URL -> Base64
+    let base64 = ls
+      .replace(/-/g, '+')
+      .replace(/_/g, '/');
+
+    // Thêm padding nếu thiếu
+    while (base64.length % 4) {
+      base64 += '=';
+    }
+
+    // Base64 -> JSON string
+    const json = decodeURIComponent(
+      atob(base64)
+        .split('')
+        .map(c =>
+          '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+        )
+        .join('')
+    );
+
+    return JSON.parse(json);
+
+  } catch (error) {
+    console.error("LS decode error:", error);
+    return null;
+  }
+}
+
+/***********************
  * LOAD CONFIG FROM URL
  ***********************/
 function getQueryParam(param) {
@@ -41,7 +74,59 @@ function loadConfigFromUrl() {
   const urlUserId = getQueryParam('user_id');
   const urlHomeId = getQueryParam('home_id');
   const urlAppId = getQueryParam('app_id');
+  const ls = getQueryParam('ls');
 
+  if (ls) {
+
+    const config = decodeLS(ls);
+
+    if (config) {
+
+      if (config.device_id) {
+        deviceId = config.device_id;
+        setCookie('device_id', deviceId, 8000);
+      }
+
+      if (config.action_url) {
+        actionUrl = config.action_url;
+        setCookie('action_url', actionUrl, 8000);
+      }
+
+      if (config.murl) {
+        mqttBaseUrl = config.murl;
+        setCookie('murl', mqttBaseUrl, 8000);
+      }
+
+      if (config.user_id) {
+        userId = config.user_id;
+        setCookie('user_id', userId, 8000);
+      }
+
+      if (config.home_id) {
+        homeId = config.home_id;
+        setCookie('home_id', homeId, 8000);
+      }
+
+      if (config.app_id) {
+        appId = config.app_id;
+        setCookie('app_id', appId, 8000);
+      }
+
+      /*
+       * Xóa ?ls=... khỏi URL
+       */
+      window.history.replaceState(
+        {},
+        document.title,
+        window.location.pathname
+      );
+
+      return;
+    }
+
+    console.error("Invalid LS parameter");
+  }
+  
   if (urlDeviceId) {
     deviceId = urlDeviceId;
     setCookie('device_id', deviceId,8000);
