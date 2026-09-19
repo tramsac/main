@@ -1,1 +1,270 @@
-const a0_0x48f10c=a0_0x107b;(function(_0x1c1d49,_0xf0ba82){const _0x297bf1=a0_0x107b,_0x102174=_0x1c1d49();while(!![]){try{const _0x5f2f39=parseInt(_0x297bf1(0x1a1))/0x1*(parseInt(_0x297bf1(0x1c3))/0x2)+parseInt(_0x297bf1(0x1b7))/0x3+-parseInt(_0x297bf1(0x1f0))/0x4+parseInt(_0x297bf1(0x1a4))/0x5*(parseInt(_0x297bf1(0x1c5))/0x6)+parseInt(_0x297bf1(0x19d))/0x7*(parseInt(_0x297bf1(0x1e4))/0x8)+-parseInt(_0x297bf1(0x1f1))/0x9*(-parseInt(_0x297bf1(0x1cf))/0xa)+-parseInt(_0x297bf1(0x1a3))/0xb*(parseInt(_0x297bf1(0x1d4))/0xc);if(_0x5f2f39===_0xf0ba82)break;else _0x102174['push'](_0x102174['shift']());}catch(_0x3c5ca6){_0x102174['push'](_0x102174['shift']());}}}(a0_0x3b68,0xf2e0e));let deviceId=a0_0x48f10c(0x1af),actionUrl=null,mqttBaseUrl=null,userId=null,homeId=null,appId=null;function loadConfigFromCookie(){const _0x24562d=a0_0x48f10c;deviceId=getCookie(_0x24562d(0x1b1))||deviceId,actionUrl=getCookie(_0x24562d(0x1a8)),mqttBaseUrl=getCookie(_0x24562d(0x1b5)),userId=getCookie('user_id'),homeId=getCookie(_0x24562d(0x1ed)),appId=getCookie('app_id');}function getQueryParam(_0x366994){const _0x3c6ca4=a0_0x48f10c;return new URLSearchParams(window[_0x3c6ca4(0x1b0)]['search'])[_0x3c6ca4(0x1ef)](_0x366994);}function loadConfigFromUrl(){const _0x494596=a0_0x48f10c,_0x3021d6=getQueryParam('device_id'),_0x1e7ead=getQueryParam(_0x494596(0x1a8)),_0xd49de6=getQueryParam(_0x494596(0x1b5)),_0x49b63b=getQueryParam('user_id'),_0x442d0a=getQueryParam(_0x494596(0x1ed)),_0x21e341=getQueryParam(_0x494596(0x1e3));_0x3021d6&&(deviceId=_0x3021d6,setCookie(_0x494596(0x1b1),deviceId,0x1f40)),_0x1e7ead&&(actionUrl=_0x1e7ead,setCookie(_0x494596(0x1a8),actionUrl,0x1f40)),_0xd49de6&&(mqttBaseUrl=_0xd49de6,setCookie(_0x494596(0x1b5),mqttBaseUrl,0x1f40)),_0x49b63b&&(userId=_0x49b63b,setCookie(_0x494596(0x1be),userId,0x1f40)),_0x442d0a&&(homeId=_0x442d0a,setCookie(_0x494596(0x1ed),homeId,0x1f40)),_0x21e341&&(appId=_0x21e341,setCookie(_0x494596(0x1e3),appId,0x1f40));}window[a0_0x48f10c(0x1ce)]=function(){loadConfigFromUrl();};function a0_0x3b68(){const _0x26bd8f=['uptime','toLocaleString','tranid','device-status-icon','user_id','device-status-time','Đang\x20bảo\x20trì','#data-table-body\x20tr','content-green','2BXcHkf','https://cdn-icons-png.flaticon.com/512/3103/3103453.png','11346yRDUbl','https://cdn-icons-png.flaticon.com/512/3103/3103446.png','total-display','online','createElement','content-red','textContent','data','\x20VNĐ','onload','1560eKCOyG','https://cdn-icons-png.flaticon.com/512/190/190411.png','remain_sec_foam_spray','ssid','querySelectorAll','12TEoiJv','ONLINE','running','time_stamp','getMonth','</td>\x0a\x20\x20\x20\x20<td\x20class=\x22','Đang\x20chạy','Đang\x20chờ','querySelector','https://cdn-icons-png.flaticon.com/512/1828/1828778.png','text-success','OFFLINE','Đang\x20sạc','getDate','device-status-text','app_id','5408raFOKf','battery-icon','charging-icon','data-ts','</td>\x0a\x20\x20','includes','https://cdn-icons-png.flaticon.com/512/3103/3103478.png','remain_sec',')\x20-\x20(Bọt\x20tuyết\x20:\x20','home_id',')\x20]\x20','get','5352056zrnbkY','71469KzoixX','padStart','\x20[(Xịt\x20nước\x20:\x20','status','src','2184fudZWn','/state','setAttribute','text-danger','613948JfJmyN','msg','29319818KSzTgf','2705kVrbkE','battery-level','\x0a\x20\x20\x20\x20<td\x20class=\x22','data-table-body','action_url','getAttribute','getElementById','mode','innerHTML','replace','/transaction','ws_1777041042219','location','device_id','rssi','className','https://cdn-icons-png.flaticon.com/512/724/724664.png','murl','parse','5734785kjUUfj','https://cdn-icons-png.flaticon.com/512/565/565547.png','appendChild'];a0_0x3b68=function(){return _0x26bd8f;};return a0_0x3b68();}function getCurrentDate(){const _0x1e3379=a0_0x48f10c,_0x2b16c4=new Date(),_0x507740=String(_0x2b16c4[_0x1e3379(0x1e1)]())[_0x1e3379(0x1f2)](0x2,'0'),_0x5432db=String(_0x2b16c4[_0x1e3379(0x1d8)]()+0x1)[_0x1e3379(0x1f2)](0x2,'0'),_0x25452e=_0x2b16c4['getFullYear']();return''+_0x507740+_0x5432db+_0x25452e;}function a0_0x107b(_0x2c3381,_0x272e30){_0x2c3381=_0x2c3381-0x19c;const _0x3b68df=a0_0x3b68();let _0x107bfd=_0x3b68df[_0x2c3381];return _0x107bfd;}let currentDate=getCurrentDate();function addTransactionRow(_0x332817,_0x353cad,_0x340ac7,_0x2246e5,_0x36fa00){const _0x1e36a1=a0_0x48f10c,_0x37031e=document[_0x1e36a1(0x1aa)](_0x1e36a1(0x1a7)),_0x4f1012=document[_0x1e36a1(0x1c9)]('tr');_0x4f1012[_0x1e36a1(0x19f)]('data-ts',_0x340ac7);const _0xe6c6df=_0x332817===0x0?_0x1e36a1(0x1c2):_0x1e36a1(0x1ca);_0x4f1012[_0x1e36a1(0x1ac)]=_0x1e36a1(0x1a6)+_0xe6c6df+'\x22>'+_0x353cad+_0x1e36a1(0x1d9)+_0xe6c6df+'\x22>'+unixToTime(_0x340ac7)+_0x1e36a1(0x1d9)+_0xe6c6df+'\x22>'+_0x2246e5+_0x1e36a1(0x1d9)+_0xe6c6df+'\x22>'+_0x36fa00+_0x1e36a1(0x1e8);const _0x286621=_0x37031e['querySelectorAll']('tr');let _0x354b69=![];for(let _0x5ef179 of _0x286621){const _0x4bd2ef=parseInt(_0x5ef179[_0x1e36a1(0x1a9)](_0x1e36a1(0x1e7)));if(_0x340ac7>_0x4bd2ef){_0x37031e['insertBefore'](_0x4f1012,_0x5ef179),_0x354b69=!![];break;}}!_0x354b69&&_0x37031e[_0x1e36a1(0x1b9)](_0x4f1012);}function clearTable(){const _0x1098bd=a0_0x48f10c;document[_0x1098bd(0x1aa)](_0x1098bd(0x1a7))[_0x1098bd(0x1ac)]='';}function calculateTotal(){const _0x20deff=a0_0x48f10c;let _0x411f4e=0x0;const _0x4845f9=document[_0x20deff(0x1d3)](_0x20deff(0x1c1));_0x4845f9['forEach'](_0x3fe79f=>{const _0x11b274=_0x20deff,_0x3b4d30=_0x3fe79f[_0x11b274(0x1dc)]('td:nth-child(3)');if(!_0x3b4d30)return;let _0x23c3ba=_0x3b4d30[_0x11b274(0x1cb)]['trim']()[_0x11b274(0x1ad)](/,/g,'')['replace']('+','');_0x411f4e+=parseInt(_0x23c3ba||0x0,0xa);}),document[_0x20deff(0x1aa)](_0x20deff(0x1c7))[_0x20deff(0x1cb)]=':\x20'+_0x411f4e[_0x20deff(0x1bb)]()+_0x20deff(0x1cd);}function controller(_0x1c7bfc,_0x107654){const _0x2f232e=a0_0x48f10c;if(_0x1c7bfc[_0x2f232e(0x1e9)](_0x2f232e(0x1ae))){const _0x13b4e7=JSON[_0x2f232e(0x1b6)](_0x107654);addTransactionRow(0x0,_0x13b4e7[_0x2f232e(0x1bc)],_0x13b4e7[_0x2f232e(0x1d7)],_0x13b4e7['money'],_0x13b4e7[_0x2f232e(0x1a2)]),calculateTotal();}else{if(_0x1c7bfc[_0x2f232e(0x1e9)]('/lwt')){const _0x22cc73=document[_0x2f232e(0x1aa)](_0x2f232e(0x1e2)),_0x1bbabd=document['getElementById'](_0x2f232e(0x1bd));_0x107654===_0x2f232e(0x1c8)?(_0x22cc73[_0x2f232e(0x1ac)]=_0x2f232e(0x1d5),_0x22cc73[_0x2f232e(0x1b3)]=_0x2f232e(0x1de),_0x1bbabd['src']=_0x2f232e(0x1d0)):(_0x22cc73['innerHTML']=_0x2f232e(0x1df),_0x22cc73[_0x2f232e(0x1b3)]=_0x2f232e(0x1a0),_0x1bbabd[_0x2f232e(0x19c)]=_0x2f232e(0x1b8));}else{if(_0x1c7bfc['includes'](_0x2f232e(0x19e))){const _0x4ce862=JSON[_0x2f232e(0x1b6)](_0x107654);document[_0x2f232e(0x1aa)](_0x2f232e(0x1ba))[_0x2f232e(0x1ac)]=formatUptime(_0x4ce862[_0x2f232e(0x1ba)]),document[_0x2f232e(0x1aa)]('device-wifi')[_0x2f232e(0x1ac)]=_0x4ce862['network'][_0x2f232e(0x1cc)][_0x2f232e(0x1d2)],document[_0x2f232e(0x1aa)](_0x2f232e(0x1b2))[_0x2f232e(0x1ac)]=_0x4ce862['network']['data']['rssi'];const _0x8ad359=document[_0x2f232e(0x1aa)]('server-status-text'),_0x53b563=document[_0x2f232e(0x1aa)]('server-status-icon');_0x4ce862['server'][_0x2f232e(0x1f4)]===_0x2f232e(0x1d5)?(_0x8ad359[_0x2f232e(0x1ac)]='ONLINE',_0x8ad359[_0x2f232e(0x1b3)]=_0x2f232e(0x1de),_0x53b563[_0x2f232e(0x19c)]=_0x2f232e(0x1d0)):(_0x8ad359[_0x2f232e(0x1ac)]=_0x2f232e(0x1df),_0x8ad359[_0x2f232e(0x1b3)]='text-danger',_0x53b563['src']=_0x2f232e(0x1b8));const _0x4bb531=document['getElementById'](_0x2f232e(0x1bf));_0x4bb531[_0x2f232e(0x1ac)]=_0x2f232e(0x1f3)+formatUptime(_0x4ce862[_0x2f232e(0x1f4)][_0x2f232e(0x1eb)])+_0x2f232e(0x1ec)+formatUptime(_0x4ce862[_0x2f232e(0x1f4)][_0x2f232e(0x1d1)])+_0x2f232e(0x1ee);if(_0x4ce862[_0x2f232e(0x1f4)][_0x2f232e(0x1ab)]==0x0){if(_0x4ce862[_0x2f232e(0x1f4)][_0x2f232e(0x1d6)]==0x0)mode[_0x2f232e(0x1ac)]=_0x2f232e(0x1db);if(_0x4ce862[_0x2f232e(0x1f4)][_0x2f232e(0x1d6)]==0x1)mode['innerHTML']=_0x2f232e(0x1da);}else mode[_0x2f232e(0x1ac)]=_0x2f232e(0x1c0);}}}}function updateBatteryLevel(_0x3462e1){const _0x37f624=a0_0x48f10c;document[_0x37f624(0x1aa)](_0x37f624(0x1a5))[_0x37f624(0x1cb)]=_0x3462e1+'%';const _0x2ed3c1=document[_0x37f624(0x1aa)](_0x37f624(0x1e5));if(_0x3462e1>=0x50)_0x2ed3c1[_0x37f624(0x19c)]=_0x37f624(0x1c6);else{if(_0x3462e1>=0x32)_0x2ed3c1['src']=_0x37f624(0x1c4);else _0x3462e1>=0x14?_0x2ed3c1[_0x37f624(0x19c)]='https://cdn-icons-png.flaticon.com/512/3103/3103450.png':_0x2ed3c1[_0x37f624(0x19c)]=_0x37f624(0x1ea);}}function updateChargingStatus(_0x404c16){const _0x577034=a0_0x48f10c,_0x53a07f=document[_0x577034(0x1aa)]('charging-status'),_0x33e188=document['getElementById'](_0x577034(0x1e6));_0x404c16?(_0x53a07f[_0x577034(0x1ac)]=_0x577034(0x1e0),_0x33e188[_0x577034(0x19c)]=_0x577034(0x1b4)):(_0x53a07f[_0x577034(0x1ac)]='Không\x20sạc',_0x33e188[_0x577034(0x19c)]=_0x577034(0x1dd));}
+/***********************
+ * CONFIG GLOBAL
+ ***********************/
+let deviceId = 'ws_1777041042219';
+let actionUrl = null;
+let mqttBaseUrl = null;
+
+let userId = null;
+let homeId = null;
+let appId = null;
+
+/***********************
+ * COOKIE UTIL
+ ***********************/
+
+/***********************
+ * LOAD CONFIG FROM COOKIE
+ ***********************/
+function loadConfigFromCookie() {
+  deviceId = getCookie('device_id') || deviceId;
+  actionUrl = getCookie('action_url');
+  mqttBaseUrl = getCookie('murl');
+
+  userId = getCookie('user_id');
+  homeId = getCookie('home_id');
+  appId = getCookie('app_id');
+}
+
+/***********************
+ * LOAD CONFIG FROM URL
+ ***********************/
+function getQueryParam(param) {
+  return new URLSearchParams(window.location.search).get(param);
+}
+
+function loadConfigFromUrl() {
+  const urlDeviceId = getQueryParam('device_id');
+  const urlAction = getQueryParam('action_url');
+  const urlMurl = getQueryParam('murl');
+
+  const urlUserId = getQueryParam('user_id');
+  const urlHomeId = getQueryParam('home_id');
+  const urlAppId = getQueryParam('app_id');
+
+  if (urlDeviceId) {
+    deviceId = urlDeviceId;
+    setCookie('device_id', deviceId,8000);
+  }
+
+  if (urlAction) {
+    actionUrl = urlAction;
+    setCookie('action_url', actionUrl,8000);
+  }
+
+  if (urlMurl) {
+    mqttBaseUrl = urlMurl;
+    setCookie('murl', mqttBaseUrl,8000);
+  }
+
+  if (urlUserId) {
+    userId = urlUserId;
+    setCookie('user_id', userId,8000);
+  }
+
+  if (urlHomeId) {
+    homeId = urlHomeId;
+    setCookie('home_id', homeId,8000);
+  }
+
+  if (urlAppId) {
+    appId = urlAppId;
+    setCookie('app_id', appId,8000);
+  }
+
+  //console.log("📌 CONFIG:");
+  //console.log("deviceId:", deviceId);
+  //console.log("actionUrl:", actionUrl);
+  //console.log("mqttBaseUrl:", mqttBaseUrl);
+
+ // console.log("userId:", userId);
+  //console.log("homeId:", homeId);
+ // console.log("appId:", appId);
+}
+
+/***********************
+ * INIT
+ ***********************/
+window.onload = function () {
+
+  loadConfigFromUrl();
+};
+
+/***********************
+ * DATE UTIL
+ ***********************/
+function getCurrentDate() {
+  const now = new Date();
+  const day = String(now.getDate()).padStart(2, '0');
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const year = now.getFullYear();
+
+  return `${day}${month}${year}`;
+}
+
+let currentDate = getCurrentDate();
+
+/***********************
+ * TABLE RENDER
+ ***********************/
+function addTransactionRow(status, id, timestamp, amount, info) {
+  const tableBody = document.getElementById('data-table-body');
+  const row = document.createElement('tr');
+
+  row.setAttribute("data-ts", timestamp);
+
+  const colorClass = status === 0 ? "content-green" : "content-red";
+
+  row.innerHTML = `
+    <td class="${colorClass}">${id}</td>
+    <td class="${colorClass}">${unixToTime(timestamp)}</td>
+    <td class="${colorClass}">${amount}</td>
+    <td class="${colorClass}">${info}</td>
+  `;
+
+  const rows = tableBody.querySelectorAll("tr");
+  let inserted = false;
+
+  for (let oldRow of rows) {
+    const oldTs = parseInt(oldRow.getAttribute("data-ts"));
+
+    if (timestamp > oldTs) {
+      tableBody.insertBefore(row, oldRow);
+      inserted = true;
+      break;
+    }
+  }
+
+  if (!inserted) {
+    tableBody.appendChild(row);
+  }
+}
+
+function clearTable() {
+  document.getElementById('data-table-body').innerHTML = '';
+}
+
+/***********************
+ * TOTAL CALCULATION
+ ***********************/
+function calculateTotal() {
+  let total = 0;
+
+  const rows = document.querySelectorAll("#data-table-body tr");
+
+  rows.forEach(row => {
+    const cell = row.querySelector("td:nth-child(3)");
+    if (!cell) return;
+
+    let value = cell.textContent
+      .trim()
+      .replace(/,/g, '')
+      .replace('+', '');
+
+    total += parseInt(value || 0, 10);
+  });
+
+  document.getElementById("total-display").textContent =
+    `: ${total.toLocaleString()} VNĐ`;
+}
+
+/***********************
+ * MQTT / MESSAGE CONTROLLER
+ ***********************/
+function controller(topic, message) {
+ // console.log("TOPIC:", topic);
+  //console.log("MSG:", message);
+
+  // LOG TRANSACTION
+  if (topic.includes("/transaction")) {
+    const data = JSON.parse(message);
+    addTransactionRow(
+      0,
+      data.tranid,
+      data.time_stamp,
+      data.money,
+      data.msg
+    );
+
+    calculateTotal();
+  }
+
+  // LWT STATUS
+  else if (topic.includes("/lwt")) {
+
+    const statusText = document.getElementById("device-status-text");
+    const statusIcon = document.getElementById("device-status-icon");
+
+    if (message === "online") {
+      statusText.innerHTML = "ONLINE";
+      statusText.className = "text-success";
+      statusIcon.src = "https://cdn-icons-png.flaticon.com/512/190/190411.png";
+    } else {
+      statusText.innerHTML = "OFFLINE";
+      statusText.className = "text-danger";
+      statusIcon.src = "https://cdn-icons-png.flaticon.com/512/565/565547.png";
+    }
+  }
+
+  // DEVICE STATE
+  else if (topic.includes("/state")) {
+    const datas = JSON.parse(message);
+
+    document.getElementById("uptime").innerHTML = formatUptime(datas.uptime);
+    document.getElementById("device-wifi").innerHTML = datas.network.data.ssid;
+    document.getElementById("rssi").innerHTML = datas.network.data.rssi;
+   
+ 
+    const statusServerText = document.getElementById("server-status-text");
+    const statusServerIcon = document.getElementById("server-status-icon");
+
+    if ( datas.server.status === "ONLINE") {
+      statusServerText.innerHTML = "ONLINE";
+      statusServerText.className = "text-success";
+      statusServerIcon.src = "https://cdn-icons-png.flaticon.com/512/190/190411.png";
+    } else {
+      statusServerText.innerHTML = "OFFLINE";
+      statusServerText.className = "text-danger";
+      statusServerIcon.src = "https://cdn-icons-png.flaticon.com/512/565/565547.png";
+    }
+    
+    const dv_time = document.getElementById("device-status-time");
+    dv_time.innerHTML = " [(Xịt nước : " + formatUptime(datas.status.remain_sec) + ") - (Bọt tuyết : " + formatUptime(datas.status.remain_sec_foam_spray)+") ] ";
+    if (datas.status.mode == 0) {
+      if (datas.status.running == 0) mode.innerHTML = "Đang chờ";
+      if (datas.status.running == 1) mode.innerHTML = "Đang chạy";
+    } else mode.innerHTML = "Đang bảo trì";
+  }
+}
+
+/***********************
+ * BATTERY UI
+ ***********************/
+function updateBatteryLevel(level) {
+  document.getElementById("battery-level").textContent = `${level}%`;
+
+  const icon = document.getElementById("battery-icon");
+
+  if (level >= 80) {
+    icon.src = "https://cdn-icons-png.flaticon.com/512/3103/3103446.png";
+  } else if (level >= 50) {
+    icon.src = "https://cdn-icons-png.flaticon.com/512/3103/3103453.png";
+  } else if (level >= 20) {
+    icon.src = "https://cdn-icons-png.flaticon.com/512/3103/3103450.png";
+  } else {
+    icon.src = "https://cdn-icons-png.flaticon.com/512/3103/3103478.png";
+  }
+}
+
+function updateChargingStatus(isCharging) {
+  const text = document.getElementById("charging-status");
+  const icon = document.getElementById("charging-icon");
+
+  if (isCharging) {
+    text.innerHTML = "Đang sạc";
+    icon.src = "https://cdn-icons-png.flaticon.com/512/724/724664.png";
+  } else {
+    text.innerHTML = "Không sạc";
+    icon.src = "https://cdn-icons-png.flaticon.com/512/1828/1828778.png";
+  }
+}
