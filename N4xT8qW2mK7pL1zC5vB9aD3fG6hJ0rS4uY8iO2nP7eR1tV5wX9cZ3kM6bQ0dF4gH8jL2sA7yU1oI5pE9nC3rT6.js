@@ -1,1 +1,112 @@
-function a0_0x5b24(){const _0x5445a5=['getDate',';\x20expires=','1117718RnxRIP','\x20day','7739584LAwJfX','push','\x20sec','padStart','length','getMinutes','cookie','1131522jQaFuD','setTime','9BDHVrr','split','getMonth','1788860ztgDeu','floor','slice','getHours','296566iSoSUT','toUTCString','getTime','364456IZFTVQ','1661755vnLKkr','join','substring','0\x20sec'];a0_0x5b24=function(){return _0x5445a5;};return a0_0x5b24();}(function(_0x31bc18,_0xeabd3){const _0x5cda46=a0_0x5d9f,_0x25c771=_0x31bc18();while(!![]){try{const _0x4ca1a0=-parseInt(_0x5cda46(0xc0))/0x1+parseInt(_0x5cda46(0xc3))/0x2*(parseInt(_0x5cda46(0xb9))/0x3)+parseInt(_0x5cda46(0xbc))/0x4+parseInt(_0x5cda46(0xc4))/0x5+parseInt(_0x5cda46(0xb7))/0x6+parseInt(_0x5cda46(0xca))/0x7+-parseInt(_0x5cda46(0xcc))/0x8;if(_0x4ca1a0===_0xeabd3)break;else _0x25c771['push'](_0x25c771['shift']());}catch(_0x383945){_0x25c771['push'](_0x25c771['shift']());}}}(a0_0x5b24,0x64381));var today_string;function formatUptime(_0x209fb8){const _0x45afda=a0_0x5d9f;if(!_0x209fb8||_0x209fb8<0x0)return _0x45afda(0xc7);let _0x4c2f94=Math[_0x45afda(0xbd)](_0x209fb8/0x15180);_0x209fb8%=0x15180;let _0xafe87a=Math[_0x45afda(0xbd)](_0x209fb8/0xe10);_0x209fb8%=0xe10;let _0x11358e=Math[_0x45afda(0xbd)](_0x209fb8/0x3c),_0x26343a=_0x209fb8%0x3c,_0xdeab1a=[];if(_0x4c2f94>0x0)_0xdeab1a[_0x45afda(0xcd)](_0x4c2f94+_0x45afda(0xcb));if(_0xafe87a>0x0)_0xdeab1a[_0x45afda(0xcd)](_0xafe87a+'\x20hour');if(_0x11358e>0x0)_0xdeab1a[_0x45afda(0xcd)](_0x11358e+'\x20min');if(_0x26343a>0x0)_0xdeab1a[_0x45afda(0xcd)](_0x26343a+_0x45afda(0xb2));return _0xdeab1a[_0x45afda(0xb4)]?_0xdeab1a[_0x45afda(0xc5)]('\x20'):_0x45afda(0xc7);}function isTodayFromPart5(_0x54883c){const _0x5cec59=a0_0x5d9f;if(!_0x54883c||_0x54883c['length']!==0x6)return![];let _0x27a5cf=parseInt(_0x54883c[_0x5cec59(0xbe)](0x0,0x2)),_0x544c0f=parseInt(_0x54883c[_0x5cec59(0xbe)](0x2,0x4)),_0x2ac70d=parseInt(_0x54883c[_0x5cec59(0xbe)](0x4,0x6))+0x7d0;const _0x13376f=new Date();return _0x27a5cf===_0x13376f['getDate']()&&_0x544c0f===_0x13376f[_0x5cec59(0xbb)]()+0x1&&_0x2ac70d===_0x13376f['getFullYear']();}function a0_0x5d9f(_0x1e5132,_0x169980){_0x1e5132=_0x1e5132-0xb2;const _0x5b2491=a0_0x5b24();let _0x5d9ff0=_0x5b2491[_0x1e5132];return _0x5d9ff0;}function unixToTime(_0x243190){const _0x2b128a=a0_0x5d9f,_0x347451=new Date(_0x243190),_0x3f5f80=_0x347451[_0x2b128a(0xbf)](),_0x2f6e59=_0x347451[_0x2b128a(0xb5)](),_0x2f0102=_0x347451['getSeconds'](),_0x14be10=_0x3f5f80<0xa?'0'+_0x3f5f80:_0x3f5f80,_0x13a5ca=_0x2f6e59<0xa?'0'+_0x2f6e59:_0x2f6e59,_0x175988=_0x2f0102<0xa?'0'+_0x2f0102:_0x2f0102;return _0x14be10+':'+_0x13a5ca+':'+_0x175988;}function layNgayThangNamHienTai(){const _0x3b6670=a0_0x5d9f,_0x28a850=new Date(),_0x4e1d7d=String(_0x28a850[_0x3b6670(0xc8)]())[_0x3b6670(0xb3)](0x2,'0'),_0x5c330f=String(_0x28a850[_0x3b6670(0xbb)]()+0x1)['padStart'](0x2,'0'),_0x555d75=_0x28a850['getFullYear'](),_0x324b4d=''+_0x4e1d7d+_0x5c330f+_0x555d75;return _0x324b4d;}function setCookie(_0x3223a2,_0x2aaee5,_0x170e9f){const _0x5d28ef=a0_0x5d9f;let _0x1628b0='';if(_0x170e9f){const _0x3be2c7=new Date();_0x3be2c7[_0x5d28ef(0xb8)](_0x3be2c7[_0x5d28ef(0xc2)]()+_0x170e9f*0x18*0x3c*0x3c*0x3e8),_0x1628b0=_0x5d28ef(0xc9)+_0x3be2c7[_0x5d28ef(0xc1)]();}document['cookie']=_0x3223a2+'='+(_0x2aaee5||'')+_0x1628b0+';\x20path=/';}function getCookie(_0x1e7626){const _0xef9344=a0_0x5d9f,_0x1b7cfb=_0x1e7626+'=',_0x2ae7e3=document[_0xef9344(0xb6)][_0xef9344(0xba)](';');for(let _0x31d7a0=0x0;_0x31d7a0<_0x2ae7e3['length'];_0x31d7a0++){let _0x2636d1=_0x2ae7e3[_0x31d7a0];while(_0x2636d1['charAt'](0x0)==='\x20')_0x2636d1=_0x2636d1['substring'](0x1,_0x2636d1[_0xef9344(0xb4)]);if(_0x2636d1['indexOf'](_0x1b7cfb)===0x0)return _0x2636d1[_0xef9344(0xc6)](_0x1b7cfb['length'],_0x2636d1['length']);}return null;}
+// Hàm để lấy ngày hôm nay từ Unix timestamp
+var today_string;
+/*function isToday(timestamp) {
+    // Tạo đối tượng Date từ timestamp
+    let date = new Date(timestamp * 1000);
+    // Lấy ngày, tháng, năm
+    let day = date.getDate();        // Ngày
+    let month = date.getMonth() + 1; // Tháng (tháng bắt đầu từ 0 nên phải cộng thêm 1)
+    let year = date.getFullYear();   // Năm
+
+    const today = new Date();
+    // Lấy ngày, tháng, năm hiện tại
+    const day_init = today.getDate(); // Ngày
+    const month_init = today.getMonth() + 1; // Tháng (getMonth() trả về từ 0-11, nên cần +1)
+    const year_init = today.getFullYear(); // Năm
+
+    if (day == day_init && month == month_init && year == year_init)
+        return true;
+    else
+        return false;
+}*/
+function formatUptime(seconds) {
+    if (!seconds || seconds < 0) return "0 sec";
+
+    let days = Math.floor(seconds / 86400);
+    seconds %= 86400;
+
+    let hours = Math.floor(seconds / 3600);
+    seconds %= 3600;
+
+    let minutes = Math.floor(seconds / 60);
+    let secs = seconds % 60;
+
+    let result = [];
+
+    if (days > 0) result.push(`${days} day`);
+    if (hours > 0) result.push(`${hours} hour`);
+    if (minutes > 0) result.push(`${minutes} min`);
+    if (secs > 0) result.push(`${secs} sec`);
+
+    return result.length ? result.join(" ") : "0 sec";
+}
+function isTodayFromPart5(ddmmyy) {
+    if (!ddmmyy || ddmmyy.length !== 6) return false;
+
+    // Tách ngày tháng năm từ chuỗi
+    let day = parseInt(ddmmyy.slice(0, 2));
+    let month = parseInt(ddmmyy.slice(2, 4));
+    let year = parseInt(ddmmyy.slice(4, 6)) + 2000; // 26 -> 2026
+
+    const today = new Date();
+
+    return (
+        day === today.getDate() &&
+        month === (today.getMonth() + 1) &&
+        year === today.getFullYear()
+    );
+}
+function unixToTime(unixTimestamp) {
+    // Chuyển Unix Timestamp từ giây thành mili giây (nếu cần)
+    const date = new Date(unixTimestamp);
+
+    // Lấy giờ, phút, giây
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    // Định dạng để đảm bảo 2 chữ số (nếu cần)
+    const formattedHours = hours < 10 ? `0${hours}` : hours;
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+    const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+
+    // Ghép lại thành định dạng hh:mm:ss
+    return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+}
+
+function layNgayThangNamHienTai() {
+    // Lấy ngày, tháng và năm hiện tại
+    const today = new Date();
+    const ngay = String(today.getDate()).padStart(2, '0'); // Đảm bảo ngày có 2 chữ số
+    const thang = String(today.getMonth() + 1).padStart(2, '0'); // Đảm bảo tháng có 2 chữ số
+    const nam = today.getFullYear(); // Lấy năm
+
+    // Lưu kết quả vào biến
+    const ngayThangNam = `${ngay}${thang}${nam}`; // Định dạng ngày/tháng/năm
+
+    return ngayThangNam; // Trả về kết quả
+}
+
+// Hàm lưu giá trị vào cookie
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Tính toán thời gian hết hạn
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/"; // Lưu cookie
+    
+}
+
+// Hàm lấy giá trị từ cookie
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null; // Trả về null nếu không tìm thấy cookie
+}
